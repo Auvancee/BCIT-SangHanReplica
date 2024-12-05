@@ -51,6 +51,7 @@ Command: { sass --watch scss:styles }
 
 #### Still unsure?
 <hr>
-- Read the presentations
-- Talk to chatgpt but make sure it doesnt target the sensitive files previously mentioned.
-
+- Read the presentations <br>
+- Talk to chatgpt but make sure it doesnt target the sensitive files 
+  previously mentioned. <br>
+- You can look at my section2 code on how I called variables in my scss section.
