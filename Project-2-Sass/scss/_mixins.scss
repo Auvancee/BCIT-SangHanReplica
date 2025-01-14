@@ -1,0 +1,9 @@
+@use "_variables" as *;
+
+/* Use For Navbar */
+@mixin navElement($footerColor) {
+    font-family: $navFont;
+    font-weight: $navFontWeight;
+    font-style: $navFontStyle;
+}
+

@@ -1,2 +1,51 @@
 @use "_variables" as *;
 @use "_mixins";
+
+$headingFontSize : 70px;
+
+footer {
+    background-color: $footerColor;
+    color:$backgroundColor;
+    
+    h1{
+        font-size: $headingFontSize;
+        text-align: center;
+        letter-spacing: -5px;
+    }
+    h4{
+        padding: 0;
+    }
+    .footer-container{
+        padding:5rem 0;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    .footer-nav-wapper{  
+        margin:1rem 2rem;
+    }
+    a{
+        color: $backgroundColor;
+        font-size: 15px;
+    }
+
+    @media (min-width: 50em) {
+        .footer-container{
+            display: flex;
+            justify-content: end;
+            gap: 10rem;
+            margin-right: 6rem;
+        }
+        .footer-thankyou{
+            font-size: 253px;
+            line-height: 180px;
+            letter-spacing: -1.3rem;
+            color: $backgroundColor;
+            padding:10rem 0;
+            text-align: center;
+        }
+         
+        
+    }
+}

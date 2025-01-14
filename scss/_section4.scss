@@ -1,2 +1,128 @@
 @use "_variables" as *;
 @use "_mixins";
+
+
+
+
+.grid-image {
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+.grid-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 10%;
+    
+}
+
+.text {
+    flex: 0 1 100%;
+    
+}
+
+.text a {
+    color: $fontColor;
+    font-family: $paragraphFont;
+}
+
+.pic-1 {
+    flex: 0 1 100%;
+}
+
+.pic-2,
+.pic-3 {
+    flex: 0 1 45%;
+}
+
+.text h2 {
+    text-transform: uppercase;
+}
+
+.pic-1 img,
+.pic-2 img,
+.pic-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.pic-4 {
+    flex: 0 1 100%;
+}
+
+.pic-4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .box1 {
+        display: flex;
+        gap: 12px;
+    }
+
+    .box1 .text {
+        flex: 0 1 38%;
+    }
+
+    .box1 .pic-1 {
+        flex: 0 1 62%;
+    }
+
+    .pic-2 {
+        flex: 0 1 38%;
+        position: relative;
+        bottom: 10rem;
+    }
+
+    .pic-2 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        content: url("https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/53b52f23-b7f6-4e09-b23e-5d1dd1ea985c/8E88173A-5A25-4C70-BA57-F240F020E1E2.JPG?format=1500w")
+    }
+
+    .pic-3 {
+        flex: 0 1 41%;
+        box-sizing: border-box;
+        position: relative;
+        top: 20rem;
+    }
+
+    .text h2 {
+        text-transform: uppercase;
+    }
+
+    .pic-1 img,
+    .pic-3 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .pic-4 {
+        flex: 0 0 49%;
+        position: relative;
+        top: 10rem;
+        left: calc(62px + (34 * (100vw - 800px)/400));
+    }
+
+    .pic-4 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        content: url("https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/55a2547f-90df-42d1-beb9-f3107548ddf9/A34AE70A-E896-4AAD-AD67-B130014B7278.JPG?format=1500w");
+    }
+}
+
+
+
+

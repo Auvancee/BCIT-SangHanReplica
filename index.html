@@ -10,18 +10,33 @@
     <link rel="stylesheet" href="https://use.typekit.net/eua7hwh.css"> <!--Courier Std Medium - 400-->
     <link rel="stylesheet" href="https://use.typekit.net/eua7hwh.css"> <!--Aktiv Grotesk - 400-->
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- js -->
+    <script src="scripts/menu.js" defer></script>
 </head>
-    <body>
+    <body id="#">
 
         <!--Lucy - Navbar-->
-        <header> 
-
-
-
-
-
+        <header class="header-nav">
+            <a href="#"><img class="header-logo" src="images/logo.png" alt="Header Logo"></a>
+        
+            <button class="btn-menu" id="btn-menu">
+                <span class="button-content">
+                    <span class="text">Menu</span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a class="nav-link" href="#">ABOUT</a></li>
+                    <li><a class="nav-link" href="#">JOURNAL</a></li>
+                </ul>
+            </nav>
         </header>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 
 
@@ -29,33 +44,146 @@
 
         <main>
             <!--Lucy - Section 1-->
-
-
-
-
-
-
+            <section class="section-one">
+                <header class="main-header">
+                    <h1>PHOTOGRAPHY & DESIGN</h1>
+                </header>
+                <div class="section-one-wapper"> 
+                        <div>
+                          <img class="green-car-img" src="images/1st.jpg" alt="Green Car">
+                        </div>
+                        <article class="section-one-article">
+                          <div>
+                            <h2>CALIFORNIA BASED, MIDWEST RAISED DESIGN DIRECTOR</h2>
+                          </div>
+                          <div class="article-content">
+                            <p>Sang Han is a California-based photographer and design leader focused on creating rich digital product experiences. He communicates through unique concepts that deliver compelling stories. His ultimate goal is to solve complex problems through ideas that translate into thoughtful design solutions to help and delight his audience.</p>
+                            <div class="section-link">
+                                <span class="sqsrte-text-color--black">→ </span>
+                                <a href="#">About Sang</a>
+                            </div>
+                          </div>
+                        </article>                   
+                </div>
+            </section>
 
             <!--Aakif (Omar) - Section 2-->
+            <section class = "section-two">
+                <div class="section-two-wrapper">
+                    <div class="iphone-container">
 
-            <section class="Design-Direction-Container">
-                <h1 class="example">yes</h1>
-                <h2 class="example2">yes</h2>
-                <p class="dd-p">yes</p>
+                        <div>
+                            <h2>DESIGN DIRECTION</h2>
+                            <p>My design experience spans from large brands like Google, Apple and Facebook 
+                                to numerous award winning digital agencies like DDB. From helping to launch 
+                                flagship products at Apple to evolving a billion user experience in Google Maps, 
+                                I have had the honor and privilege to work on some of the most iconic products in the world.
+                            </p>
+                            <blockquote>Detailed case studies and resume available upon request.</blockquote>
+                            <div class="view-section-link">
+                                <span class="View-More">→ </span>
+                                <a href="#">View more in the Journal</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <article>
+                        <img class="iphoneblack" src="images/2nd.jpg" alt="Iphone">    
+                    </article>
+
+                    <img class="apple-design" src="images/3rd.jpg" alt="apple-design">
+                    
+                </div>
+
+
+                <div class="bulk-image-container">
+                    <img class="map1" src="images/4th.png" alt="map1">
+                    <img class="map2" src="images/5th.png" alt="map2">
+                    <img class="nike" src="images/6th.jpg" alt="nike">
+                    <img class="apple-pencil" src="images/7th.jpg" alt="apple-pencil">
+                </div>
+
             </section>
 
 
-
+        
 
             <!--Andrew - Section 3-->
+            <section class="places-section">
+                <article class="places-section-intro">
+                    <div class="places-intro-text">
+                        <div>
+                            <h3>Photography - places</h3>
+                        </div>
 
+                        <div class="intro-paragraph-container">
+                            <p>Photography's ability to capture the most precious moments throughout my life
+                                are one of the most cherished artifacts I own. The stories they tell and the
+                                memories that last are truly worth a thousand words. It's a hobby that has
+                                turned into a life passion project.
+                            </p>
+                            <a href="https://www.sanghan.co/journal"><span class="arrow">→ </span>View more in the
+                                Journal</a>
+                        </div>
+
+                    </div>
+                    <div class="empty">
+
+                    </div>
+                    <div class="places-image-container">
+                        <img class="places-first"
+                            src="https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/cc15f144-c009-4844-b247-818fbef49a94/5C8C7244-FDC3-4119-9A26-CADA41889A83.JPG?format=2500w"
+                            alt="man on the beach">
+                    </div>
+                </article>
+
+                <img class="places-second"
+                    src="https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/19276545-b190-4558-bc03-c8c8e6fa370b/DBC14141-D7E0-4DB2-A61E-B043D7219B34.JPG?format=2500w"
+                    alt="city view from window">
+                <img class="places-third"
+                    src="https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/1a6b0c78-f157-4d66-b7f5-28cd76754782/0B8792F1-42EA-4501-B40F-458BEF00C36F.JPG?format=2500w"
+                    alt="basketball court with palm trees">
+                    
+                <div class="places-container">
+                    <img class="places-fourth"
+                        src="https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/41b9dae9-d9c3-4cfc-af09-929f9cd79e64/E71354DE-317C-47E6-AC9C-B8425600665C.JPG?format=2500w"
+                        alt="three palm trees">
+                    <img class="places-fifth"
+                        src="https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/0422bcc9-3a30-448f-9a37-f286b5f70c87/B87CD404-6D9F-4A31-93C8-709E7FDED901.JPG?format=2500w"
+                        alt="street intersection sign with trees">
+                </div>                
+
+            </section>
 
 
 
 
 
             <!--Ang - Section 4-->
-
+            <section class="grid-image">
+                <div class="grid-Container">
+                    <div class="box1">
+                        <div class="text">
+                            <h2>Photography-People</h2>
+                            <a href="#">View more in the Journal</a>
+                        </div>
+                        <div class="pic-1">
+                            <img src="images/13th.jpg" alt="A group of people playing basketball">
+                        </div>
+                    </div>
+        
+                    <div class="pic-2">
+                        <img src="images/16th.jpg" alt="A woman using a phone while sitting on a chiar">
+                    </div>
+                    <div class="pic-3">
+                        <img src="/images/15th.jpg" alt="A taxi driver">
+                    </div>
+                    <div class="pic-4">
+                        <img src="images/14th.jpg" alt="A guy skateboarding">
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -65,11 +193,29 @@
         
         <!--Lucy - Footer-->
         <footer>
-
-
-        
-        
-        </footer>
+            <section class="footer-container">
+                <div class="footer-nav-wapper">
+                    <h4>SITEMAP</h4>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">JOURNAL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-nav-wapper">
+                    <h4>FOLLOW</h4>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">INSTAGRAM</a></li>
+                            <li><a href="#">LINKEDIN</a></li>
+                            <li><a href="#">THREADS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <h1 class="footer-thankyou">THANK YOU</h1>
+    </footer>
 
         
     </body>

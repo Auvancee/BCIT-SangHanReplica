@@ -25,6 +25,7 @@
   
   body {
     margin: 0;
+    background-color: $backgroundColor;
   }
   
   /**
@@ -379,6 +380,7 @@
   }
 /* <================ ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css ==============> */
 
-main {
-    padding: 40px;
-}
+// main {
+//     padding: 40px;
+// }
+

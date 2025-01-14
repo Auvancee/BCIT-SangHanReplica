@@ -1,2 +1,149 @@
 @use "_variables" as *;
 @use "_mixins";
+
+.places-section {
+    margin-left: 42px;
+    margin-right: 42px;
+    border-bottom: 1px solid;
+}
+    
+.places-first {
+    height: 492px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.places-second {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.places-third {
+    height: 456px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.places-fourth, .places-fifth {
+    height: 240px;
+    object-fit: cover;
+    flex: 1;
+}
+
+/* the container for the last two images in the section */
+.places-container {
+    display: flex;
+    gap: 12px;
+}
+
+.places-section img {
+    margin-top: 48px;
+    display: block;
+}
+
+.places-intro-text p {
+    margin-bottom: 96px;
+    font-family: $paragraphFont;
+    color: $fontColor;
+}
+
+.places-section h3 {
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    margin-top: 40px;
+    font-family: $headingFont;
+    font-size: calc(25px + (14 * ((100vw - 800px) / 1100)));
+}
+
+@media (min-width: 1944px) {
+    .places-section h3 {
+        font-size: 32px;
+    }
+    
+}
+
+.places-section a {
+    color: inherit;
+    font-family: $paragraphFont;
+}
+
+@media (min-width: 768px) {
+// either paste this into global file for the main selector
+//or uncomment this to make my section respond the same as the original site
+    .places-section {
+        margin-left: calc(28px + (46 * ((100vw - 770px) / 1200)));
+        margin-right: calc(28px + (46 * ((100vw - 770px) / 1200)));
+    }
+
+    .places-section-intro {
+        display: flex;
+        gap: 12px;
+        margin-top: 56px;
+    }
+
+    .places-intro-text, .empty, .places-image-container {
+        flex: 1;
+    }
+
+
+    .places-first {
+        width: 100%;
+        height: calc(648px + (100 * ((100vw - 800px) / 1170)));
+    }
+
+    .places-second {
+        width: 75%;
+        height: calc(488px + (412 * ((100vw - 800px) / 1170)));
+    }
+
+    .places-third {
+        width: calc(100% / 3 - 12px);
+        float: right;
+        height: calc(405px + (343 * ((100vw - 800px) / 1170)));
+        content: url(https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/41b9dae9-d9c3-4cfc-af09-929f9cd79e64/E71354DE-317C-47E6-AC9C-B8425600665C.JPG?format=2500w);
+    }
+
+    .places-container {
+        width: 75%;
+    }
+
+    .places-container img {
+        width: calc(37.5% - 12px);
+    }
+
+    .places-section img {
+        margin-top: 14px;
+    }
+
+    .places-section h3 {
+        margin-top: 14px;
+    }
+
+    .places-fourth {
+        content: url("https://images.squarespace-cdn.com/content/v1/65f3220ed63de6438510f72d/1a6b0c78-f157-4d66-b7f5-28cd76754782/0B8792F1-42EA-4501-B40F-458BEF00C36F.JPG?format=2500w");
+    }
+
+    .places-fourth, .places-fifth {
+        height: calc(461px + (389 * ((100vw - 800px) / 1170)));
+    }
+
+    .intro-paragraph-container {
+        position: relative;
+        bottom: 3.75rem;
+    }
+
+    .places-intro-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .places-section p {
+        margin-bottom: 3rem;
+    }
+
+    .places-section a {
+        margin-bottom: 2rem;
+    }
+}
