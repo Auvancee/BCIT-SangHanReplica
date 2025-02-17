@@ -2,7 +2,7 @@
 ## ★ Welcome fellow coding enthusiastsSli ★
 
 ✦ This is a project where we developed a page of a website completely from scratch using SASS. <br>
-✦ Check Out The Live Site → auvancee.github.io/BCIT-SangHanReplica/ <br>
+✦ Check Out The Live Site → https://auvancee.github.io/BCIT-SangHanReplica/ <br>
 ✦ Original Website: https://www.sanghan.co/<br>
 
 ⋆ Minor Differences 
