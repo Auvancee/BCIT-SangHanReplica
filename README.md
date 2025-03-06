@@ -8,6 +8,7 @@
 ⋆ Minor Differences 
    - Design Direction: Image Position Design <br>
    - Slight Font Sizes <br>
+   - Slight Marging/Padding +-
 
 [ Happy Developing! :) ]
 
